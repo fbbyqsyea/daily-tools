@@ -3,7 +3,8 @@ requires = [
     "setuptools>=80.9",
     "wheel",
     "python-dotenv",
-    "tavily-python"
+    "tavily-python",
+    "httpx",
 ]
 build-backend = "setuptools.build_meta"
 

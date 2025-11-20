@@ -2,7 +2,8 @@
 requires = [
     "setuptools>=80.9",
     "wheel",
-    "python-dotenv"
+    "python-dotenv",
+    "tavily-python"
 ]
 build-backend = "setuptools.build_meta"
 

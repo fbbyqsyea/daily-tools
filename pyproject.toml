@@ -1,9 +1,13 @@
 [build-system]
-requires = ["setuptools>=80.9", "wheel"]
+requires = [
+    "setuptools>=80.9",
+    "wheel",
+    "python-dotenv"
+]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "daily-tools"
+name = "bbdtls"
 version = "0.1.0"
 description = "A set of daily used tools"
 readme = "README.md"
@@ -20,12 +24,24 @@ requires-python = ">=3.11"
 keywords = ["daily", "tools"]
 
 [project.urls]
-Homepage = "https://github.com/fbbyqsyea/daily-tools"
-Repository = "https://github.com/fbbyqsyea/daily-tools"
+Homepage = "https://github.com/fbbyqsyea/bbdtls"
+Repository = "https://github.com/fbbyqsyea/bbdtls"
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov"]
-test = ["pytest", "pytest-cov"]
+dev = [
+    "setuptools", 
+    "wheel", 
+    "twine", 
+    "pytest", 
+    "pytest-cov", 
+] # Development dependencies pip install -e .[dev]
+test = [
+    "setuptools", 
+    "wheel", 
+    "twine", 
+    "pytest", 
+    "pytest-cov", 
+] # Testing dependencies pip install -e .[test]
 
 [tool.setuptools.packages.find]
 where = ["src"]

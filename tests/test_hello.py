@@ -1,5 +1,4 @@
-import pytest
-from daily_tools.hello import hello
+from bbdtls.hello import hello
 
 # Test the hello function
 def test_hello():
